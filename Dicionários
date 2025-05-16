@@ -1,1 +1,32 @@
+# Inicializa o dicionário alunos
+alunos = {
+    "Ana": 8.5,
+    "Pedro": 7.0,
+    "Maria": 9.2
+}
 
+# Adiciona o aluno "Carlos" com nota 6.5
+alunos["Carlos"] = 6.5
+print(f"Dicionário após adicionar Carlos: {alunos}")
+
+# Atualiza a nota da aluna "Ana" para 9.0
+alunos["Ana"] = 9.0
+print(f"Dicionário após atualizar a nota de Ana: {alunos}")
+
+# Remove o aluno "Pedro" do dicionário alunos
+del alunos["Pedro"]
+print(f"Dicionário após remover Pedro: {alunos}")
+
+# Calcula a média das notas dos alunos presentes
+if alunos:
+    notas = alunos.values()
+    media = sum(notas) / len(notas)
+    print(f"A média das notas dos alunos é: {media:.2f}")
+else:
+    print("Não há alunos no dicionário para calcular a média.")
+
+# Verifica se o aluno "Maria" está presente no dicionário
+if "Maria" in alunos:
+    print("A aluna Maria está presente no dicionário.")
+else:
+    print("A aluna Maria não está presente no dicionário.")
