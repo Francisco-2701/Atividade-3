@@ -28,3 +28,12 @@ print(comprimento)
 
 # quarta lista 
 
+frutas = ['morango', 'abacaxi', 'goiaba', 'jambo', 'banana']
+
+# Comando para retornar o primeiro elemento da lista:
+primeiro_elemento = frutas[0]
+print(primeiro_elemento)
+
+# Comando para retornar o terceiro elemento da lista:
+terceiro_elemento = frutas[2]
+print(terceiro_elemento)
